@@ -1,125 +1,178 @@
-# Monarc
+# Sundown Studio
 
-Monarc is a premium fashion and atelier landing page built as a static web
-experience. The site presents a quiet-luxury brand story through cinematic
-video, editorial collection sections, hover previews, tabbed storytelling, and
-a horizontal standards carousel.
+A modern, design-driven experiential website and creative portfolio for **Sundown Studio** — a multi-disciplinary studio focused on creating unique, end-to-end environments, experiences, and digital content.
 
-![Monarc logo](./assets/images/logo/logo.png)
+![Sundown Studio Logo](./assets/images/logo/logo.svg)
+
+---
 
 ## Overview
 
-This project is a front-end brand website for MONARC. It is designed around a
-minimal editorial aesthetic with large typography, soft motion, image-led
-sections, and smooth page interactions.
+**Sundown Studio** is an award-winning style creative showcase built with clean, vanilla web technologies. Inspired by minimal editorial design and contemporary spatial branding, the website pairs bold typography with organic motion, ambient background elements, and interactive micro-interactions.
 
-The experience includes:
+### Highlights & Key Experiences
 
-- A full-screen animated preloader.
-- Hero section with brand copy, oversized typography, animated background
-  shapes, and a video feature.
-- Moving text marquee for brand keywords.
-- Featured collection list with hover image previews.
-- Interactive Craft, Design, and Identity tabs.
-- Swiper-powered carousel for the MONARC standard.
-- Full-screen mobile navigation overlay.
-- Responsive styling for desktop and smaller screens.
+- **Typographic Preloader**: Minimalist full-screen loader cycling dynamically through the studio's core disciplines: *Environments*, *Experiences*, and *Content*.
+- **Hero Canvas with Ambient Motion**: Dramatic oversized headline (*"Spaces that inspire"*) juxtaposed with organic morphing gooey gradient shapes and looped cinematic video.
+- **Kinetic Infinite Marquee**: Seamless moving typography ticker reinforcing brand identity.
+- **Interactive Project Showcase**: Dynamic project directory featuring activations for Nike, Arc'teryx, Converse, and Afterpay, complete with smooth cursor-following floating image previews.
+- **Tabbed Capability Showcase**: Interactive tab switcher (*Design*, *Project*, *Execution*) with smooth image cross-fading and narrative descriptions.
+- **Partner Showcase Carousel**: Swiper-powered horizontal slider displaying client relationships across New York, Chicago, and Los Angeles.
+- **Full-Screen Responsive Overlay Navigation**: Accessible mobile-first overlay navigation with staggered entrance animations.
+- **Smooth Momentum Scrolling**: Locomotive Scroll integration for fluid spatial storytelling.
+
+---
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) via CDN
-- [Swiper](https://swiperjs.com/) via CDN
-- Google Fonts via CDN
+- **Core**: HTML5, CSS3, Modern ES6+ JavaScript
+- **Smooth Scroll**: [Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll) v3.5.4 (CDN)
+- **Sliders & Carousels**: [Swiper](https://swiperjs.com/) v12 (CDN)
+- **Typography**: Custom local *Neue Haas Grotesk Display* typeface
+- **Media**: Optimized WebP photography, vector SVGs, and MP4 video
 
-No build tool or package manager is required.
+No complex build pipelines, bundlers, or package managers are required.
+
+---
 
 ## Project Structure
 
 ```text
 .
-|-- assets/
-|   |-- fonts/
-|   |-- images/
-|   |   |-- list images/
-|   |   |-- logo/
-|   |   `-- slider images/
-|   `-- videos/
-|-- index.html
-|-- script.js
-|-- style.css
-`-- README.md
+├── assets/
+│   ├── fonts/
+│   │   ├── NeueHaasDisplayMediu.ttf
+│   │   └── NeueHaasDisplayRoman.ttf
+│   ├── images/
+│   │   ├── Footer Logo.svg
+│   │   ├── list images/
+│   │   │   ├── 1.webp
+│   │   │   ├── 2.webp
+│   │   │   ├── 3.webp
+│   │   │   ├── 4.webp
+│   │   │   ├── 5.webp
+│   │   │   ├── 6.webp
+│   │   │   ├── 7.webp
+│   │   │   └── 8.webp
+│   │   ├── logo/
+│   │   │   ├── favicon.png
+│   │   │   └── logo.svg
+│   │   ├── slider images/
+│   │   │   ├── AfterPay.svg
+│   │   │   ├── Arc'teryx.svg
+│   │   │   ├── Converse.svg
+│   │   │   ├── Hunter.svg
+│   │   │   ├── MediaLink.svg
+│   │   │   └── Nike.svg
+│   │   ├── page-2.webp
+│   │   ├── page4-1.webp
+│   │   ├── page4-2.webp
+│   │   └── page4-3.webp
+│   └── videos/
+│       └── video.mp4
+├── index.html
+├── script.js
+├── style.css
+└── README.md
 ```
+
+---
 
 ## Getting Started
 
-Clone the repository:
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YashGajjar-19/Monarc.git
-cd Monarc
+git clone https://github.com/gajjaryash19/sundown-studio.git
+cd sundown-studio
 ```
 
-Open `index.html` in a modern browser.
+### 2. Run Locally
 
-Because the project loads Locomotive Scroll, Swiper, and Google Fonts from
-CDNs, an internet connection is recommended when viewing the site locally.
-
-## Running Locally
-
-You can open the file directly:
-
-```text
-index.html
-```
-
-Or serve the folder with any static server:
+You can open `index.html` directly in any modern web browser:
 
 ```bash
+# Windows PowerShell
+Start-Process index.html
+
+# macOS
+open index.html
+
+# Linux
+xdg-open index.html
+```
+
+Or serve the directory using a lightweight local development server:
+
+```bash
+# Using Python
 python -m http.server 8000
+
+# Using Node.js (npx)
+npx serve .
 ```
 
-Then visit:
-
+Then navigate to:
 ```text
 http://localhost:8000
 ```
 
-## Main Files
+> **Note**: An active internet connection is recommended when viewing locally to load external libraries (Locomotive Scroll and Swiper) from their respective CDNs.
 
-- `index.html` contains the page markup and external stylesheet/script links.
-- `style.css` contains the visual system, layout, animations, and responsive
-  rules.
-- `script.js` initializes Locomotive Scroll, Swiper, loader behavior, collection
-  hover previews, tab switching, and the full-screen menu.
-- `assets/` contains brand imagery, carousel imagery, logo files, fonts, and
-  video media.
+---
 
-## JavaScript Features
+## Core Architecture & Features
 
-The site uses small vanilla JavaScript modules for:
+### 1. Cursor-Tracking Follower (`script.js`)
+The featured projects list features a smooth, floating preview image that tracks user cursor coordinates via linear interpolation (LERP):
+```javascript
+currentX += (mouseX - currentX) * 0.1;
+currentY += (mouseY - currentY) * 0.1;
+```
 
-- Smooth scrolling initialization when Locomotive Scroll is available.
-- Hover-based fixed image previews for the featured collection list.
-- Craft, Design, and Identity tab state updates.
-- Swiper carousel setup.
-- Mobile menu open and close behavior.
-- Timed loader transition after the page starts.
+### 2. Ambient Gradient Blends (`style.css`)
+Custom keyframe animations (`#hero-shape` and `#gooey`) produce organic morphing heat gradients utilizing Gaussian filters and blended radial gradients:
+- `#fe330b` (Sundown Ember Red)
+- `#ff9831` (Warm Amber Glow)
+
+### 3. Cross-Fading Capability Tabs
+The capability box on Page 4 uses an overlay image approach with cubic-bezier easing to cross-fade between project stages (*Design*, *Project*, *Execution*) without layout shifts or flashes.
+
+### 4. Accessibility & Responsiveness
+- Implements `prefers-reduced-motion` media queries to tone down or disable intense animations.
+- Accessible `:focus-visible` outlines for keyboard navigators.
+- Fully responsive across desktop displays, tablets, and mobile smartphones.
+
+---
 
 ## Browser Support
 
-The site is intended for current desktop and mobile browsers, including:
+Tested and supported across all modern evergreen browsers:
+- Google Chrome
+- Mozilla Firefox
+- Apple Safari
+- Microsoft Edge
 
-- Chrome
-- Edge
-- Firefox
-- Safari
+---
 
-## Notes
+## Deployment
 
-- External libraries are loaded from CDN links in `index.html`.
-- Local brand assets are referenced with relative paths from the project root.
-- The project is static and can be deployed to any static hosting provider,
-  such as GitHub Pages, Netlify, Vercel, or Cloudflare Pages.
+Because this project is built entirely with static assets, it can be deployed instantly to any static host:
+
+- **GitHub Pages**
+- **Vercel** (`npx vercel`)
+- **Netlify** (`npx netlify deploy`)
+- **Cloudflare Pages**
+
+---
+
+## Author & Maintainer
+
+- **Yash Gajjar** — [@gajjaryash19](https://github.com/gajjaryash19)  
+  Email: [gajjaryash19@outlook.com](mailto:gajjaryash19@outlook.com)
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
