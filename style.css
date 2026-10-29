@@ -649,12 +649,12 @@ nav h3 {
   color: #fe330a;
 }
 
-#footer h1 {
-  font-size: 23vw;
+#footer .footer-logo {
+  margin-bottom: 2vw;
 }
 
 #footer-div {
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
